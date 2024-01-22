@@ -11,7 +11,7 @@ const Register = () => {
             <div className='flex md:flex-row gap-y-20 flex-col-reverse justify-center items-center '>
             {/* LEFT SIDE */}
                 <div className='w-[60%]'>
-                    <p className='md:text-4xl text-3xl md:text-left text-center  font-bol tracking-wider text-secondary-600 md:whitespace-nowrap' >Unlock Exclusive Benefits</p>
+                    <p className='md:text-4xl sm:text-3xl text-2xl md:text-left text-center  font-bol tracking-wider text-secondary-600 md:whitespace-nowrap' >Unlock Exclusive Benefits</p>
                     <form className='flex flex-col justify-center md:w-[70%] md:pb-0 pb-16  gap-5 mt-8 '>
                         <div>
                             <label htmlFor="name" className="block mb-2 text-sm ml-1 font-medium text-black tracking-wider">PHONE NUMBER</label>
@@ -25,11 +25,12 @@ const Register = () => {
                                 inputStyle={{
                                     borderRadius: "40px 40px",
                                     width: "100%",
-                                    outline:"black"
+                                    border:"1px solid black"
                                 }}
 
                                 buttonStyle={{
                                     borderRadius: "40px 0px 0px 40px",
+                                    border:"1px solid black"
                                 }}
                             />
                         </div>

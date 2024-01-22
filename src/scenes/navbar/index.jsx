@@ -1,7 +1,7 @@
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import mainIcon from "@/assets/main-icon.png"
 import useMediaQuery from '@/hooks/useMediaQuery'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "@/scenes/navbar/Link";
 import { UserIcon } from "@heroicons/react/24/outline"
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
@@ -13,6 +13,10 @@ const Navbar = () => {
     const flexBetween = 'flex justify-between  items-center'
     const [selectedPage, setSelectedPage] = useState("home");
     const [isMenuToggled, setIsMenuToggled] = useState(true);
+
+    useEffect(()=>{
+        setIsMenuToggled(true)
+    },[pathname])
 
 
     return <nav>
